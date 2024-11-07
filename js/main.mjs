@@ -1,7 +1,11 @@
-import { loadTheme } from "./utils/themes.mjs";
+import { loadComponent } from './utils/components.mjs';
+import { getQueryParams } from './utils/queryParams.mjs';
+import { loadTheme } from './utils/themes.mjs';
 
 const init = () => {
-  loadTheme();
+  const params = getQueryParams();
+  loadTheme(params.theme);
+  loadComponent('footer', '#footer');
 };
 
 init();
