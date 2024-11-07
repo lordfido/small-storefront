@@ -1,6 +1,6 @@
 /**
  * @typedef QueryParams
- * @property {string?} theme
+ * @property {string?} flavour
  */
 
 /**
