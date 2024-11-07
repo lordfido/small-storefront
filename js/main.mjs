@@ -1,10 +1,11 @@
 import { loadComponent } from './utils/components.mjs';
+import { loadMetaData } from './utils/metadata.mjs';
 import { getQueryParams } from './utils/queryParams.mjs';
-import { loadTheme } from './utils/themes.mjs';
 
 const init = () => {
   const params = getQueryParams();
-  loadTheme(params.theme);
+
+  loadMetaData(params.flavour);
   loadComponent('footer', '#footer');
 };
 
