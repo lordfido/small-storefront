@@ -1,0 +1,8 @@
+.Footer {
+    background: red;
+    padding: 8px 12px;
+}
+
+.Footer__Line {
+    color: white;
+}
